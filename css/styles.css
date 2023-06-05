@@ -1,89 +1,82 @@
-<head>
-    <link rel="stylesheet" type="text/css" href="C:/Users/Alex/Documents/Github/UX_UI_HW_18/Untitled-1.css">
-</head>
-
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
+body {
+    font-family: Arial, sans-serif;
 }
 
-.logo {
-    width: 23%;
-    padding: 1%;
+header.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #F0F0F0;
+}
+
+header.navigation img {
+    height: 50px;
+}
+
+header.navigation ul {
+    list-style: none;
+}
+
+header.navigation ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+section.heroImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section.heroImg img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+section.heroImg button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+section.mySkills, section.myWork {
+    margin: 20px;
+}
+
+section.mySkills .flexContainer, section.myWork .workGrid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section.mySkills .flexContainer div, section.myWork .workGrid div {
+    margin: 10px;
+    width: 30%;
     text-align: center;
 }
 
-nav {
-    width: 73%;
-    padding: 1%;
+section.mySkills .flexContainer img, section.myWork .workGrid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-nav ul {
-    width: 50%;
-    margin-left: auto;
-}
-
-/* Hero image CSS */
-.heroImg {
-    height: 600px;
-    padding: 25px;
-}
-
-.heroImg .content {
-    width: 500px;
-    margin: 0 auto;
-}
-
-/* Footer CSS */
 footer {
-    background-color: #373738;
-    padding: 20px; 
+    background-color: #F0F0F0;
+    padding: 10px;
 }
 
 footer ul {
+    list-style: none;
+    text-align: center;
+}
+
+footer ul li {
     display: inline-block;
-    vertical-align: top;
-    padding: 20px; 
-}
-
-footer li {
-    padding: 10px; 
-}
-
-
-.flexContainer {
-    display: flex;
-    flex-direction: row; 
-}
-
-.flexContainer > div {
-    width: 33%;
-    margin: 10px; 
-    padding: 10px; 
-}
-
-
-.workGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto auto; 
-}
-
-.workGrid > div {
-    
-}
-
-
-@media only screen and (max-width: 600px) {
-    .flexContainer {
-        flex-direction: column;
-    }
-
-    .flexContainer > div {
-        width: 100%;
-    }
-
-    .workGrid {
-        grid-template-columns: 1fr; 
-    }
+    margin-left: 15px;
 }
